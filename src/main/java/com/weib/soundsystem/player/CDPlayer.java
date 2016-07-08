@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
  *
  * @author zhangjingwei
  */
-@Component
+//@Component
 public class CDPlayer implements MediaPlayer {
     
     private CD cd;
     
-    @Autowired  //表名自动装配时所使用的构造器
+    //@Autowired  //表名自动装配时所使用的构造器
     public CDPlayer(CD cd){
         this.cd = cd;
     }

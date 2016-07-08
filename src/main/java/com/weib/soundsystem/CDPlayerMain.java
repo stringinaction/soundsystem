@@ -5,6 +5,7 @@
  */
 package com.weib.soundsystem;
 
+import com.weib.soundsystem.cd.WhiteAlbum;
 import com.weib.soundsystem.configuration.CDPlayerConfig;
 import com.weib.soundsystem.player.CDPlayer;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,8 +21,15 @@ public class CDPlayerMain {
             context = new AnnotationConfigApplicationContext(CDPlayerConfig.class);
 //            SgtPeppers sp = (SgtPeppers) context.getBean("sgtPeppers");
 //            sp.play();
-            CDPlayer cdplayer = context.getBean(CDPlayer.class);
+//            CDPlayer cdplayer = context.getBean(CDPlayer.class);
+//            cdplayer.play();
+
+            WhiteAlbum cd = context.getBean(WhiteAlbum.class);
+            CDPlayer cdplayer = context.getBean(CDPlayer.class, cd);
             cdplayer.play();
+            
+//            CDPlayer cdwriter = (CDPlayer) context.getBean("cdWriter", (WhiteAlbum)context.getBean("whiteAlbum"));
+//            cdwriter.play();
         }catch(Exception e){
             e.printStackTrace();
         }finally{

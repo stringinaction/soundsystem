@@ -11,15 +11,12 @@ import org.springframework.stereotype.Component;
  *
  * @author zhangjingwei
  */
-//@Component  //声明为组件类
-public class SgtPeppers implements CD {
+//@Component
+public class WhiteAlbum implements CD {
 
-    private static String title = "Sgt. Peppers's Lonely Hearts Club Band";
-    private static String artist = "The Beatles";
-    
     @Override
     public void play() {
-        System.out.println("Playing " + title + " by " + artist);
+        System.out.println("***This is a White Album***");
     }
     
 }

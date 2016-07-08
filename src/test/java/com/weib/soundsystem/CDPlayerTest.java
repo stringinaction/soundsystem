@@ -23,21 +23,21 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes=CDPlayerConfig.class)
 public class CDPlayerTest {
     
-    @Autowired
-    private CD cd;
-    
-    @Autowired
-    private MediaPlayer mediaPlayer;
-    
-    @Test
-    public void cdShouldNotBeNull(){
-        assertNotNull(cd);
-    }
-    
-    @Test
-    public void play(){
-        assertNotNull(mediaPlayer);
-        mediaPlayer.play();
-    }
+//    @Autowired
+//    private CD cd;
+//    
+//    @Autowired
+//    private MediaPlayer mediaPlayer;
+//    
+//    @Test
+//    public void cdShouldNotBeNull(){
+//        assertNotNull(cd);
+//    }
+//    
+//    @Test
+//    public void play(){
+//        assertNotNull(mediaPlayer);
+//        mediaPlayer.play();
+//    }
     
 }
