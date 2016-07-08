@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.weib.soundsystem;
+package com.weib.soundsystem.cd;
 
 import org.springframework.stereotype.Component;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  *
  * @author zhangjingwei
  */
-@Component
+@Component  //声明为组件类
 public class SgtPeppers implements CD {
 
     private static String title = "Sgt. Peppers's Lonely Hearts Club Band";

@@ -5,6 +5,9 @@
  */
 package com.weib.soundsystem;
 
+import com.weib.soundsystem.cd.CD;
+import com.weib.soundsystem.configuration.CDPlayerConfig;
+import com.weib.soundsystem.player.MediaPlayer;
 import static junit.framework.Assert.assertNotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,9 +26,18 @@ public class CDPlayerTest {
     @Autowired
     private CD cd;
     
+    @Autowired
+    private MediaPlayer mediaPlayer;
+    
     @Test
     public void cdShouldNotBeNull(){
         assertNotNull(cd);
+    }
+    
+    @Test
+    public void play(){
+        assertNotNull(mediaPlayer);
+        mediaPlayer.play();
     }
     
 }

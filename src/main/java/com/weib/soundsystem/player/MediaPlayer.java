@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.weib.soundsystem;
-
-import org.springframework.context.annotation.ComponentScan;
+package com.weib.soundsystem.player;
 
 /**
  *
  * @author zhangjingwei
  */
-@ComponentScan
-public class CDPlayerConfig {
+public interface MediaPlayer {
+    public void play();
 }
