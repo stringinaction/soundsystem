@@ -3,9 +3,9 @@
 
 ###自动扫描组件　
 <pre>
-    @Component
+    @Component                              //只要定义了该注解，就会被ComponentScan发现并自动装配
     @Component("指定BeanID")
-    @ComponentScan("com.weib.soundsystem") //指定包名
+    @ComponentScan("com.weib.soundsystem") //指定包名   指定的包名包含子目录
     @ComponentScan(basePackages={"com.weib.soundsystem"}) //指定多个包名
     @ComponentScan(basePackageClasses={SgtPeppers.class, CDPlayer.class})   //指定组件类　
 </pre>
